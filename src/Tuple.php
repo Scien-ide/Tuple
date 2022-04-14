@@ -53,6 +53,7 @@ class Tuple implements ArrayAccess, IteratorAggregate, Countable
      * @throws \InvalidArgumentException
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         if ($this->offsetExists($offset)) {
